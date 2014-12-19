@@ -11,4 +11,4 @@ The plugin allows to collect the sha-1 of the device's primary email. To access 
 
 Optionally, you can add a string to be concatenated with the email before is hashed with the sha-1 algorithm. Add the string in a meta-data tag inside the application tag, as follows:
 
-<meta-data android:name="AdjustVulcunSalt" android:value="vulcun salt example" >
+meta-data android:name="AdjustVulcunSalt" android:value="vulcun salt example"
