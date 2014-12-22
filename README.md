@@ -1,4 +1,4 @@
-Adjust Pugin for Email SHA1 Attribution
+Adjust Pugin for Email attribution
 =======================================
 To add the `Email Sha1 plugin`, first move the file `plugin/plugin_email.java` to the folder `Adjust/src/com/adjust/sdk/plugin/`.
 
