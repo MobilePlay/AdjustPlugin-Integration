@@ -1,8 +1,5 @@
 AdjustPlugin-Integration
 ========================
-
-Adjust Integration for SHA1 Plugin
-
 The plugin mechanism allows to add optional functionality to the Adjust SDK without changing the current implementation. Just add one of the plugins from the plugin folder to Adjust/src/com/adjust/sdk/plugin and it's functionality will be automatically added.
 
 +Email_SHA1 To add the Email_Sha1 plugin, first move the file plugin/plugin_email.java to the folder Adjust/src/com/adjust/sdk/plugin/.
