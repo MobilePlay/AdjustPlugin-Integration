@@ -12,8 +12,8 @@ The `Email Sha1 plugin` allows to collect the SHA-1 of the device's primary emai
 ```
 Step 2
 ------
-In Adjust/src/com/adjust/sdk/Constants.java add the plugin by it’s full path
+In Adjust/src/com/adjust/sdk/Constants.java add the plugin by it’s full path.
 
 ````
-<List<String> PLUGINS = Arrays.asList("com.adjust.sdk.plugin.emailsha1"); \>
+List<String> PLUGINS = Arrays.asList("com.adjust.sdk.plugin.emailsha1");
 ````
