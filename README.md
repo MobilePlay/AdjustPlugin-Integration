@@ -16,7 +16,7 @@ For a more in depth set of instructions regarding implementation of the Adjust.c
 
 ###Step 1
 
-To add the Email SHA1 plugin, first move the file `AdjustPlugin-Integration/emailsha1.java` to the folder `Adjust/src/com/adjust/sdk/plugin/`.
+To add the Email SHA1 plugin, first move the file `AdjustPlugin-Integration/EmailSHA1.java` to the folder `Adjust/src/com/adjust/sdk/plugin/`.
 
 The emailSHA1 plugin allows the app to collect the SHA-1 of the device's primary email. To access this information, you need to add the following permission to the AndroidManifest.xml:
 ```
@@ -28,5 +28,17 @@ Once the GET_ACCOUNTS permission is enabled, you will need to ensure the app inv
 
 In `Adjust/src/com/adjust/sdk/Constants.java` add the plugin with the full path.
 ```
-List<String> PLUGINS = Arrays.asList("com.adjust.sdk.plugin.emailsha1");
+List<String> PLUGINS = Arrays.asList("com.adjust.sdk.plugin.EmailSHA1");
 ```
+###Step 3
+
+Check visibility level of sha1 method for ../Adjust/src/com/adjust/sdk/Util.java unit. It should be set to public as an example below:
+```
+    public static String sha1(final String text) 
+    {
+        return hash(text, SHA1);
+    }
+```
+###Step 4
+
+Build and run your android app.
