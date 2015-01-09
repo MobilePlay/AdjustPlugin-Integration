@@ -4,7 +4,7 @@ The following plugin modifies the Adjust.com tracking SDK for Android which can 
 
 The purpose of this plugin is to enable the Adjust SDK to access the primary email address associated with Google Play on a device. Once the account information is accessed it is encrypted using SHA1 encryption, after which it is sent to Adjust’s servers. The Adjust server will then match up the SHA1 data from the SDK to information in the Adjust system. 
 
-To enable this plugin, you will need to add the `EmailSHA1.java` file, enable the `GET_ACCOUNTS` permission and create proper references via `Constants.java` file. 
+To enable this plugin, you will need to add the `emailsha1.java` file, enable the `GET_ACCOUNTS` permission and create proper references via `Constants.java` file. 
 
 Once the code is updated, compile the APK file and resubmit to Google Play. 
 
@@ -16,7 +16,7 @@ For a more in depth set of instructions regarding implementation of the Adjust.c
 
 ###Step 1
 
-To add the Email SHA1 plugin, first move the file `AdjustPlugin-Integration/EmailSHA1.java` to the folder `Adjust/src/com/adjust/sdk/plugin/`.
+To add the Email SHA1 plugin, first move the file `AdjustPlugin-Integration/emailsha1.java` to the folder `Adjust/src/com/adjust/sdk/plugin/`.
 
 The emailSHA1 plugin allows the app to collect the SHA-1 of the device's primary email. To access this information, you need to add the following permission to the AndroidManifest.xml:
 ```
@@ -28,7 +28,7 @@ Once the GET_ACCOUNTS permission is enabled, you will need to ensure the app inv
 
 In `Adjust/src/com/adjust/sdk/Constants.java` add the plugin with the full path.
 ```
-List<String> PLUGINS = Arrays.asList("com.adjust.sdk.plugin.EmailSHA1");
+List<String> PLUGINS = Arrays.asList("com.adjust.sdk.plugin.emailsha1");
 ```
 ###Step 3
 
