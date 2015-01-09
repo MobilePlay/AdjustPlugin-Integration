@@ -42,3 +42,10 @@ Check visibility level of sha1 method for ../Adjust/src/com/adjust/sdk/Util.java
 ###Step 4
 
 Build and run your android app.
+
+##Testing
+
+Once the app is build successfully and published to Google Play Store, you can run a test by installing app on your android device using tracker link created through Adjust dashboard.
+ ![][]
+
+##Contact
