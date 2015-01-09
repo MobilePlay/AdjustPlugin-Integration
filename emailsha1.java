@@ -14,7 +14,7 @@ import com.adjust.sdk.AdjustFactory;
 import com.adjust.sdk.Logger;
 import com.adjust.sdk.Util;
 
-public class EmailSHA1 implements Plugin {
+public class emailsha1 implements Plugin {
 	@Override
 	public Map.Entry<String, String> getParameter(Context context) {
 		if (context == null) {
