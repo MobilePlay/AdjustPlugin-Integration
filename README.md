@@ -45,7 +45,16 @@ Build and run your android app.
 
 ##Testing
 
-Once the app is build successfully and published to Google Play Store, you can run a test by installing app on your android device using tracker link created through Adjust dashboard.
- ![][]
-
-##Contact
+Once the app is build successfully and published to Google Play Store, to test attribution using email please provide the tracker link to your MobilePlay contact. 
+ 
+Sample Tracker link:
+```
+https://app.adjust.io/SIX_DIGIT_TRACKER_CODE
+```
+ We will setup a test flow for your application and provide a link for you to test attribution. Please note that your device can only be attributed once per application, to test again the ID must be erased from Adjust database. Use the following link to erase your device.     
+```
+https://app.adjust.io/forget_device?app_token=YOUR_APP_TOKEN&gps_adid=YOUR_GOOGLE_ADVERTISER_ID
+```
+ 
+##Contact Us:
+For any questions on implementing this plugin please email contactus@mobileplay.com
